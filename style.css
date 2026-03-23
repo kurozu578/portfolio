@@ -1,0 +1,104 @@
+/* 全体 */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #f5f1ea, #e8dfd5);
+    margin: 0;
+    color: #3e2f26;
+}
+
+/* 中央寄せ */
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+
+/* ヘッダー本体 */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #5f534e; 
+    z-index: 1000;
+}
+
+.header-inner {
+    width: 800px;
+    margin: 0 auto;
+    padding: 8px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 文字白 */
+header h1{
+    color: white !important;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* ボタン風 */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+/* ホバー */
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* カード */
+.card {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(80, 60, 40, 0.15);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* タイトル */
+h2 {
+    border-left: 5px solid #a67c52;
+    padding-left: 10px;
+}
+
+/* カード内 */
+.project, .experience {
+    background: #faf7f3;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover, .experience:hover {
+    transform: translateY(-5px);
+}
+
+/* リンク */
+a {
+    color: #8b5e3c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
